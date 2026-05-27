@@ -73,7 +73,7 @@ Once mainnet is live, validation becomes quantitative rather than indicative:
 |---|---|---|
 | Monthly active wallets | 500+ | On-chain |
 | Matches per month | 10,000+ | On-chain (settled matches) |
-| SC-share-record holders | 50+ | On-chain (record registry) |
+| SC-share-record holders | 676/contract | On-chain (record registry) |
 | Builder portal active publishers | 3–5 | On-chain (registered games) |
 | Quarterly Incubation report cadence | Every 90 days | Public publication |
 
