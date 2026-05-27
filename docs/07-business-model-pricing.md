@@ -107,7 +107,7 @@ The 7.5% revenue share to Incubation (Component A) comes from **the reserve stre
 
 ## ICO mechanics (separate from this grant)
 
-ICO will target 15B QU across three phases (5B / 20B / 15B at three price points) post-mainnet. 25% of proceeds burn at ICO close. ICO proceeds fund post-launch operations, builder fund seeding, treasury reserve, and ongoing development.
+ICO will target 40B QU across three phases (5B / 20B / 15B at three price points) post-mainnet. 25% of proceeds burn at ICO close. ICO proceeds fund post-launch operations, builder fund seeding, treasury reserve, and ongoing development.
 
 **The ICO does not repay the Incubation grant.** Repayment comes from protocol revenue (Component A) and the token allocation (Component B), not from token sale proceeds.
 
