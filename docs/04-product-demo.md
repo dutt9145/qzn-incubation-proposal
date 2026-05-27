@@ -64,7 +64,7 @@ All six deployed at testnet indices 26–31. Internal audit findings being remed
 
 ## What we want the Board to see at the protocol level
 
-- `QZN_Token.cpp` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete, 50/50 procedure tests green)
+- `QZN_Token_v2.h` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete, 50/50 procedure tests green)
 - The full test suite (Token v2 procedure suite + pre-refactor baseline for the remaining five contracts; constellation pattern application scoped under M2)
 - The deployed contracts at testnet 26–31
 - The three live games at qzn.app
