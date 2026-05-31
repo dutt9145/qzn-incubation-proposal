@@ -40,7 +40,7 @@ This is conservative. It does not assume any successful paid acquisition, viral 
 
 How we get there:
 - Hunter knows several Qubic-ecosystem developers personally
-- Builder Fund (50M QZN allocation) provides direct economic incentive for early publishers
+- Builder Fund (53.5M QZN allocation) provides direct economic incentive for early publishers
 - 5% builder revenue stream from accumulator flush plus per-game customization of routing creates ongoing builder economics
 - Pham (existing frontend contributor) becomes a reference case for "what a builder publishing on QZN looks like"
 
@@ -48,13 +48,13 @@ How we get there:
 
 ### Revenue bottom-up
 
-Per [07 — Business Model & Pricing](./07-business-model-pricing.md), each 100 QU of match value routes 20 QU to the accumulator. The accumulator then flushes through five streams at epoch boundaries. Total annual protocol revenue is fundamentally a function of match volume × average match value.
+Per [07 — Business Model & Pricing](./07-business-model-pricing.md), each 100 QU of match value routes 20 QU to the accumulator. The accumulator then flushes through six streams at epoch boundaries. Total annual protocol revenue is fundamentally a function of match volume × average match value.
 
-**Conservative Year 1 estimate:** 5,000 matches/month × 1,000 QU/match × 12 months × 20% accumulator share = **120M QU/year in accumulator flow.** Distributed across burn (30M), dividends (66M), operations (6M), reserve (6M), grants (12M).
+**Conservative Year 1 estimate:** 5,000 matches/month × 1,000 QU/match × 12 months × 20% accumulator share = **12M QU/year in accumulator flow.** Distributed across operations (0.6M), reserve (0.6M), grants (1.2M), dividends (3.6M), burn (2.4M), and operator compensation (3.6M).
 
-**Base case Year 1:** 15,000 matches/month × 1,000 QU/match × 12 months × 20% = **360M QU/year.**
+**Base case Year 1:** 15,000 matches/month × 1,000 QU/match × 12 months × 20% = **36M QU/year.**
 
-**Bull case Year 1:** 50,000 matches/month × 1,500 QU/match × 12 months × 20% = **1.8B QU/year.**
+**Bull case Year 1:** 50,000 matches/month × 1,500 QU/match × 12 months × 20% = **180M QU/year.**
 
 These numbers scale roughly linearly with match volume and roughly linearly with average match value.
 

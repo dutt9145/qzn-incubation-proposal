@@ -28,7 +28,7 @@ Backend tracks match results, XP, leaderboards, sessions. Three games run today 
 5. Operators (Rust nodes) independently validate, sign attestation, submit to chain
 6. N-of-M attestation threshold met → `QZN_GameCabinet` triggers settlement
 7. `QZN_RewardRouter` distributes: 70% to winner, 20% to accumulator, 5% to burn, 5% to operators
-8. Accumulator flushes at epoch boundary into dividends/operations/grants/burn/reserve streams
+8. Accumulator flushes at epoch boundary into six streams: operations, reserve, grants, dividends, burn, and operator compensation
 
 ## MVP scope for mainnet launch
 
@@ -45,7 +45,7 @@ Backend tracks match results, XP, leaderboards, sessions. Three games run today 
 
 ## The Constellation, in one paragraph
 
-Six contracts. Each has a `PULSE_INDEX` 0–5. On every epoch, one of them is "in pulse" (selected by `epoch() % 6`). During its pulse epoch, that contract's SC-share holders vote the burn rate between 20% and 40%. Off-pulse epochs use 25% baseline burn. The other routing percentages are fixed in `constexpr` and cannot be changed without a public contract migration.
+Six contracts. Each has a `PULSE_INDEX` 0–5. On every epoch, one of them is "in pulse" (selected by `epoch() % 6`). During its pulse epoch, that contract's SC-share holders vote the burn rate between 15% and 30%. Off-pulse epochs use 20% baseline burn. The other routing percentages are fixed in `constexpr` and cannot be changed without a public contract migration.
 
 **This is what we mean by deterministic governance.** No contract has continuous control. Burn is bounded. Routing is fixed. The pulse moves on every epoch.
 
@@ -64,7 +64,7 @@ All six deployed at testnet indices 26–31. Internal audit findings being remed
 
 ## What we want the Board to see at the protocol level
 
-- `QZN_Token.cpp` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete, 50/50 procedure tests green)
+- `QZN_Token_v2.h` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete, 50/50 procedure tests green)
 - The full test suite (Token v2 procedure suite + pre-refactor baseline for the remaining five contracts; constellation pattern application scoped under M2)
 - The deployed contracts at testnet 26–31
 - The three live games at qzn.app
@@ -87,7 +87,7 @@ Operators perform three categories of technical work:
 
 ## How operators are compensated
 
-The 5% of standard match value routed to node operators (per the BPS table in [07 — Business Model & Pricing](./07-business-model-pricing.md)) is distributed **proportionally to validation work performed in each epoch**. Per-event compensation rates are identical across all tiers. **Operators who perform no validation work earn zero, regardless of stake size.**
+Operators are compensated through two channels (per the BPS tables in [07 — Business Model & Pricing](./07-business-model-pricing.md)): a **5% per-match share** routed immediately to the operator that hosted and settled the match, and the **operator-compensation stream of the epoch accumulator** (30% baseline, 20–35% depending on the pulse burn vote), distributed **proportionally to validation work performed across the epoch**. Per-event compensation rates are identical across all tiers. **Operators who perform no validation work earn zero, regardless of stake size.**
 
 This is service compensation for technical labor, not investment return on capital deployed.
 
@@ -148,7 +148,7 @@ Node operators are a concentrated decision-making layer. To prevent collusion:
 - **Oracle-driven random assignment.** Validator-to-match assignment is pseudo-randomized per epoch via Qubic Oracle Machines. Collusion requires controlling enough operators to overcome random selection probabilistically.
 - **Public attestation history.** Every operator decision is recorded on-chain. Pattern analysis exposes consistent outlier behavior over time.
 - **Slashing for proven malice.** Operators demonstrated to have validated incorrect settlements lose 20% of stake.
-- **Founder + multi-sig emergency override.** In catastrophic situations (security incident, demonstrated systemic collusion), founder + multi-sig can invoke emergency procedures including operator removal. Override invocation is publicly disclosed with reasoning.
+- **Community-vote emergency action.** In catastrophic situations (security incident, demonstrated systemic collusion), emergency procedures including operator removal can be invoked **only by community vote — there is no unilateral founder override**. Any emergency action is publicly disclosed with reasoning.
 
 ## Three-tier governance
 
@@ -157,8 +157,8 @@ QZN operates a three-tier governance structure with bounded authority at each le
 | Tier | Authority | Scope |
 |---|---|---|
 | Node operators | Operational network parameters | Validation thresholds, payout split mechanics within fixed total — bounded by smart contract code |
-| SC-share holders | Burn rate per epoch | 20–40% during Constellation pulse |
-| Founder + multi-sig | Emergency override only | Security incidents, catastrophic events, demonstrated systemic collusion — publicly disclosed |
+| SC-share holders | Burn rate per epoch | 15–30% during Constellation pulse |
+| Community vote | Emergency action only | Security incidents, catastrophic events, demonstrated systemic collusion — invoked by community vote, no unilateral founder power, publicly disclosed |
 
 The Incubation Board is a funder and quarterly report recipient, not a governance tier.
 

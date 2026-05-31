@@ -32,7 +32,7 @@ Two components, both sourced from protocol activity (not from ICO proceeds).
 
 ## Component C — Ecosystem contributions (not "return" but worth naming)
 
-- Permanent QU burn of 10–13% per standard match
+- Permanent QU burn of ~8–11% per standard match
 - QSWAP liquidity seed at launch: 2.5B QU + 10M QZN from ICO proceeds
 - Post-cap perpetual contribution of 0.25% of accumulator to Qubic ecosystem fund
 

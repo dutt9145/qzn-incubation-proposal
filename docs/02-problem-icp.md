@@ -50,13 +50,13 @@ Independent game developers who want their work distributed without taking on th
 
 The core issue is that **Web3 gaming on chains with gas fees cannot escape extraction dynamics.** When every action costs gas, game design pressure pushes toward token-mediated mechanics that justify the fees — which produces games that feel like trading platforms with a thin gameplay skin.
 
-Qubic's feeless model removes that pressure. QZN can route 70% of match value to the winner because there is no gas charge eating the routing. The protocol fee accumulator (20%) feeds dividends, burn, builder fund, and operations — all without making the player pay per move.
+Qubic's feeless model removes that pressure. QZN can route 70% of match value to the winner because there is no gas charge eating the routing. The protocol fee accumulator (20%) feeds dividends, operator compensation, burn, builder grants, operations, and reserve — all without making the player pay per move.
 
 The SC-share-record primitive then enables programmed dividends to long-term holders without requiring the protocol to issue a security. No other chain has this primitive cleanly. Without it, QZN would either need to issue a registered security (regulatory exposure for a solo founder) or skip the dividend mechanism entirely (weakening the long-term holder alignment).
 
 ## Why QZN can serve both audiences at once
 
-Gamers and builders are not separate markets that we serve in parallel — they're a two-sided ecosystem that compounds. Builders bring games; games attract players; players generate match volume; match volume generates revenue routed to builders. The Builder Fund (50M QZN, 20% of supply, plus accumulated revenue stream) underwrites the builder side until volume can sustain it organically.
+Gamers and builders are not separate markets that we serve in parallel — they're a two-sided ecosystem that compounds. Builders bring games; games attract players; players generate match volume; match volume generates revenue routed to builders. The Builder Fund (53.5M QZN, 21.4% of supply, plus accumulated revenue stream) underwrites the builder side until volume can sustain it organically.
 
 This is the standard arcade/publishing-platform model, applied to a chain where the per-match economics actually work.
 

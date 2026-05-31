@@ -12,7 +12,7 @@ The math is not subtle. On Ethereum mainnet, a single ERC-20 transfer can cost m
 
 Qubic lets a contract emit chain-native records that receive programmed dividend distributions from contract activity. No other chain has this cleanly. Without it we'd have to issue a registered security or build a custom dividend mechanism that creates regulatory exposure. Qubic gives us the primitive for free.
 
-This is structurally important for QZN's long-term holder alignment. SC-share-record holders receive 55% of the accumulator flush as programmed dividends — meaning long-term participants benefit from match volume without QZN needing to operate a securities-grade distribution program. The dividend mechanism is on-chain, deterministic, and bounded by smart contract code.
+This is structurally important for QZN's long-term holder alignment. SC-share-record holders receive 30% of the accumulator flush as programmed dividends — meaning long-term participants benefit from match volume without QZN needing to operate a securities-grade distribution program. The dividend mechanism is on-chain, deterministic, and bounded by smart contract code.
 
 ### Qubic Oracle Machines for randomness
 
