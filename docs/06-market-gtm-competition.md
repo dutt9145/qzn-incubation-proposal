@@ -41,7 +41,7 @@ This is conservative. It does not assume any successful paid acquisition, viral 
 How we get there:
 - Hunter knows several Qubic-ecosystem developers personally
 - Builder Fund (53.5M QZN allocation) provides direct economic incentive for early publishers
-- 5% builder revenue stream from accumulator flush plus per-game customization of routing creates ongoing builder economics
+- The grants stream (10% of the accumulator, 2% of match value) plus per-game customization of routing creates ongoing builder economics
 - Pham (existing frontend contributor) becomes a reference case for "what a builder publishing on QZN looks like"
 
 **Year 3 target:** 50–200 published builder games if the platform reaches sustainable economics.
@@ -122,7 +122,7 @@ Many have launched; few have sustained traction. The pattern of failure has been
 QZN's structural answers to each:
 - Routing pays 70% to winners; protocol revenue comes from a 20% accumulator that funds platform without being extractive at the individual-match level
 - Qubic is feeless
-- Builder Fund + 5% builder revenue routing creates real builder economics
+- Builder Fund + the grants stream (10% of the accumulator) creates real builder economics
 - Distribution remains an unsolved problem broadly, but Qubic ecosystem cross-promotion + builder-driven traffic + word of mouth from a good product are the realistic path
 
 ### Other Qubic-native consumer products

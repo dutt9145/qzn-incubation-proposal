@@ -30,6 +30,8 @@ The 20 QU goes into the protocol fee accumulator. At every `BEGIN_EPOCH`, the ac
 
 \* Burn and operator compensation are **pulse-variable**. During a contract's pulse epoch, its SC-share holders vote the burn rate within a 15–30% envelope; the operator-compensation share absorbs the remainder (20–35%), so burn + operators always sums to 50% of the accumulator. The figures above are the off-pulse baseline (20% / 30%).
 
+**Operations vs operator compensation:** Operations (5%) is the protocol team treasury — development runway, infrastructure, and ongoing maintenance. Operator compensation (30%) is the separate work-based pool paid to the third-party node operators that host matches and maintain uptime. The two are distinct streams.
+
 ### Effective economics per standard match (off-pulse baseline)
 
 | Stakeholder                          | Per 100 QU of match value |
@@ -96,6 +98,7 @@ The 7.5% revenue share to Incubation (Component A) comes from **the reserve stre
 - **Team allocation is intentionally restrained at 8%.** The founder has elected to keep team allocation smaller than typical for early-stage protocols and direct the difference toward the Builder fund and Treasury, where supply can be deployed to ecosystem participants and protocol operations.
 - **Contractor and future-hire compensation** will be sourced from either Treasury or Team allocation based on the role, with allocation decisions discussed transparently with the community before commitment.
 - **Incubation Program allocation is its own line item**, not nested under Treasury. The 15M QZN is committed to the Incubation Board as Component B (see [08 — Return to Incubation](https://github.com/dutt9145/qzn-incubation-proposal/blob/main/docs/08-return-to-incubation.md)) and is reserved before any other distribution from the protocol's allocation pool.
+- **The Builder fund and the grants stream are one purpose.** The Builder fund allocation above is the token reserve granted to third-party builders to build on QZN; the 10% grants stream in the routing table (the "Grants (builder fund)" line) is the ongoing protocol-revenue top-up to that same builder-funding pool. If early builder demand outruns the seed, it can be supplemented from ICO proceeds.
 
 ## Vesting
 
@@ -105,7 +108,7 @@ The 7.5% revenue share to Incubation (Component A) comes from **the reserve stre
 | LP seed               | Immediate (locked in QSWAP)           |
 | Team                  | 6-month cliff + 30-month linear vest  |
 | Ecosystem             | Gradual release per epoch             |
-| Builder fund          | No vesting (per-epoch dividend pool)  |
+| Builder fund          | No vesting (released per-epoch as builder grants) |
 | Treasury              | No vesting (multi-sig is the control) |
 | Incubation allocation | 36-month linear vest, no cliff        |
 

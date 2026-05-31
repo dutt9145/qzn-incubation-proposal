@@ -6,7 +6,7 @@ Qubic has infrastructure. It does not have many consumer products a non-crypto p
 
 ## The product
 
-QZN is a working on-chain arcade for Qubic. Three games run at [qzn.app](https://qzn.app) today: snaQe, paQman, and TANQ-Battle. Six smart contracts are deployed to testnet at indices 26–31. QZN_Token (Slot 0) has completed its constellation architecture refactor with 50/50 procedure and invariant tests green; remaining five contracts are at pre-refactor baseline pending constellation pattern application under M2 scope.
+QZN is a working on-chain arcade for Qubic. Three games run at [qzn.app](https://qzn.app) today: snaQe, paQman, and TANQ-Battle. All six smart contracts are deployed to testnet at indices 26–31 and have completed the constellation architecture refactor, with 406 procedure and invariant tests passing across the suite.
 
 ## Why Qubic
 
@@ -29,7 +29,7 @@ The SC-share-record primitive is the other reason. Qubic lets a contract emit ch
 | Milestone | Tranche | Focus |
 |---|---:|---|
 | M1 | 20.0B | Audit — four 5B tranches to mundus_tj85 |
-| M2 | 0.5B | Mechanics + multi-sig finalization, constellation pattern refactor for five remaining contracts |
+| M2 | 0.5B | Mechanics + multi-sig finalization, spec/terminology publication (contract refactor already complete) |
 | M3 | 1.0B | Arcade production-ready |
 | M4 | 0.5B | Builder portal |
 | M5 | 1.5B | Token integration on mainnet + counsel + ICO prep |
@@ -47,7 +47,7 @@ Timeline: ~12 months from M1 acceptance through mainnet launch.
 
 - Three games live at qzn.app, playable today
 - Six smart contracts deployed at testnet indices 26–31
-- QZN_Token Slot 0 refactor complete, 50/50 procedure tests green
+- All six contracts refactored to the constellation pattern, 406 tests passing
 - 1,800 unique visitors / 6,170 visits across 30 days from 58 countries, zero acquisition spend
 
 The audit is the gate between now and mainnet. Everything else is built.

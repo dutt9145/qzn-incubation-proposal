@@ -5,7 +5,7 @@
 | Milestone | Tranche | Focus |
 |---|---:|---|
 | **M1** | **20.0B** | **Audit — paid in four 5B tranches to mundus_tj85** |
-| M2 | 0.5B | Mechanics + multi-sig finalization, constellation pattern refactor |
+| M2 | 0.5B | Mechanics + multi-sig finalization, spec/terminology publication (contract refactor already complete) |
 | M3 | 1.0B | Arcade production-ready |
 | M4 | 0.5B | Builder portal (no fund seed — that's from ICO) |
 | M5 | 1.5B | Token integration on mainnet + counsel + ICO prep |
@@ -46,12 +46,12 @@ The four-tranche structure gives the Board four decision points. If T1 findings 
 - Three-layer terminology framework published
 - Multi-sig operational (Key 1 founder, Key 2 Spike) with documented disbursement procedures
 - Pre-audit remediation of known internal-audit findings complete
-- Constellation pattern applied to five remaining contracts (RewardRouter, GameCabinet, Nodes, TournamentEngine, TreasuryVault) with passing procedure and invariant tests matching Token v2's 50/50 baseline
-- `QZN_Nodes` refactored to work-based attribution model
+- Constellation pattern applied to all six contracts with 406 procedure and invariant tests passing (completed ahead of the grant)
+- `QZN_Nodes` refactored to work-based attribution model (completed ahead of the grant)
 - Founder conflict-of-interest policy published
 - Light counsel engagement initiated (David Hoppe + Aaron Hall scoped)
 
-**Use of funds:** founder operational support during 2-week contract sprint, counsel engagement deposits, multi-sig setup costs, documentation and publication.
+**Use of funds:** founder operational support, counsel engagement deposits, multi-sig setup costs, spec/terminology documentation and publication.
 
 ## M3 — Arcade production-ready (1.0B)
 

@@ -35,11 +35,11 @@ Backend tracks match results, XP, leaderboards, sessions. Three games run today 
 | Component | Status | Path to mainnet |
 |---|---|---|
 | Three live games (snaQe, paQman, TANQ-Battle) | Live at qzn.app | Polish under M3 |
-| Six smart contracts deployed | Testnet 26–31 | Constellation refactor under M2; audit under M1 |
-| Constellation pattern (deterministic governance) | Implemented in Token v2 | Apply to remaining 5 contracts under M2 |
+| Six smart contracts deployed | Testnet 26–31, all refactored (406 tests green) | Audit under M1 |
+| Constellation pattern (deterministic governance) | Implemented across all six contracts | Audited under M1 |
 | QZN utility token | Designed, tokenomics locked | Integrate across contracts under M5 |
 | Builder portal | Designed | Build under M4 |
-| Node network (Rust operators) | Designed | Build after contract refactor, 3–4 weeks |
+| Node network (Rust operators) | Nodes contract complete | Build operator software, 3–4 weeks |
 | Tournament infrastructure | Designed | Operational at launch under M6 |
 | QSWAP liquidity pair | Coordination with Spike | Seeded at launch under M6 |
 
@@ -64,8 +64,8 @@ All six deployed at testnet indices 26–31. Internal audit findings being remed
 
 ## What we want the Board to see at the protocol level
 
-- `QZN_Token_v2.h` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete, 50/50 procedure tests green)
-- The full test suite (Token v2 procedure suite + pre-refactor baseline for the remaining five contracts; constellation pattern application scoped under M2)
+- `QZN_Token_v2.h` — the `SettleMatch` routing constants and constellation pulse logic (refactor complete)
+- The full test suite — 406 procedure and invariant tests passing across all six contracts
 - The deployed contracts at testnet 26–31
 - The three live games at qzn.app
 
@@ -175,7 +175,7 @@ The Incubation Board is a funder and quarterly report recipient, not a governanc
 See [10 — Risks & Security](./10-risks-security.md) for the full risk register. Headline technical risks specific to the product:
 
 - **Audit finds material issues.** Expected and budgeted for via the M1 four-tranche structure.
-- **Constellation pattern refactor on five remaining contracts.** Token v2 demonstrates the pattern works; remaining work is application, not invention.
+- **Contracts are complete but not yet externally audited.** All six are refactored and pass 406 internal tests; the M1 audit is the external validation gate before mainnet.
 - **Game result manipulation.** Mitigated via server-side validation, signed results, replay protection, and N-of-M operator attestation.
 
 ---

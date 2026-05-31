@@ -26,7 +26,7 @@ Three things are true today that weren't true twelve months ago:
 
 ### 1. The code is ready
 
-QZN_Token (Slot 0) refactor is complete with 50/50 procedure tests green. The constellation pattern application to the remaining five contracts (RewardRouter, GameCabinet, Nodes, TournamentEngine, TreasuryVault) is scoped under M2 — roughly two weeks of focused engineering. Token v2 demonstrates that the pattern works; the remaining contracts apply the same proven structure.
+All six contracts (QZN_Token, RewardRouter, GameCabinet, Nodes, TournamentEngine, TreasuryVault) have completed the constellation pattern refactor, with 406 procedure and invariant tests passing across the suite. The highest-risk engineering — applying the deterministic-governance pattern to every contract — is done, ahead of the grant.
 
 ### 2. The ecosystem is ready
 
