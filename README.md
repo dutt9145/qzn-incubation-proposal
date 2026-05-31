@@ -19,7 +19,7 @@
 
 ## What QZN is
 
-QZN is a working on-chain arcade for Qubic. Three games run at [qzn.app](https://qzn.app) today. Six smart contracts are deployed to testnet at indices 26–31. QZN_Token (Slot 0) has completed its constellation architecture refactor with 50/50 procedure and invariant tests green; remaining five contracts are at pre-refactor baseline pending constellation pattern application under M2 scope.
+QZN is a working on-chain arcade for Qubic. Three games run at [qzn.app](https://qzn.app) today. All six smart contracts are deployed to testnet at indices 26–31 and have completed the constellation architecture refactor, with 406 procedure and invariant tests passing across the suite.
 
 ## What we need
 
