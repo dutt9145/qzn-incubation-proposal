@@ -9,15 +9,15 @@ QZN's risks fall into five categories: technical, product, legal/regulatory, ope
 | Risk | Mitigation |
 |---|---|
 | Audit finds material issues | Expected. M1 four-tranche structure is the mitigation. Board declines if findings are unfixable. |
-| Constellation pulse rotation edge case | Bounded by 15–30% vote envelope. Deterministic logic. Test coverage extensive on Token v2 (50/50 procedure tests green); pre-refactor baseline for remaining five contracts pending M2 application. |
+| Constellation pulse rotation edge case | Bounded by 15–30% vote envelope. Deterministic logic. 406 procedure and invariant tests passing across all six contracts. |
 | Game result manipulation | Server-side validation, signed results, replay protection, tournament review, N-of-M operator attestation requirement. |
 | Oracle integration failure or compromise | QZN integrates with Qubic Oracle Machines (validated through Computor consensus). Compromise of Qubic oracles would affect the entire Qubic ecosystem, not QZN specifically. Application-level fallback paths defined for tournament continuation if oracle unavailability is detected. |
 
-### Known internal-audit findings being fixed before mundus_tj85's external review
+### Internal-audit findings remediated before mundus_tj85's external review
 
-- **Constellation pattern application to five contracts** — `RewardRouter`, `GameCabinet`, `Nodes`, `TournamentEngine`, `TreasuryVault` to receive the same procedure/invariant test treatment that Token v2 already passes (M2 scope)
-- **`epochEfficiencyRating` legacy multiplier path** — to be removed during `QZN_Nodes` refactor to work-based attribution model (M2 scope)
-- **`QZN_Nodes` architectural refactor** — replace stake-tier-multiplier prototype with work-tracking attribution, proportional epoch payouts, and slashing logic before audit kickoff (M2 scope)
+- **Constellation pattern applied to all six contracts** — `RewardRouter`, `GameCabinet`, `Nodes`, `TournamentEngine`, and `TreasuryVault` now carry the same procedure/invariant test treatment as `QZN_Token`; 406 tests passing across the suite (complete)
+- **`epochEfficiencyRating` legacy multiplier path** — removed during the `QZN_Nodes` refactor to the work-based attribution model (complete)
+- **`QZN_Nodes` architectural refactor** — stake-tier-multiplier prototype replaced with work-tracking attribution, proportional epoch payouts, and slashing logic (complete)
 - Smaller findings grouped into the same pre-audit pass
 
 These are disclosed to counsel and will be disclosed to Mundus at audit kickoff. **Not concealed.**
@@ -26,7 +26,7 @@ These are disclosed to counsel and will be disclosed to Mundus at audit kickoff.
 
 | Phase | Activity | Timeline |
 |---|---|---|
-| Pre-audit remediation | Constellation refactor + known findings fixed | M2, ~2 weeks |
+| Pre-audit remediation | Constellation refactor + known findings — complete | Done (ahead of M1) |
 | Audit kickoff (M1.T1) | Scope agreement, contract handoff to Mundus | Triggered by M1 approval |
 | Initial findings (M1.T2) | Mundus delivers vulnerability report | ~4–6 weeks after kickoff |
 | Remediation (between T2 and T3) | QZN addresses findings; Mundus verifies | ~2–4 weeks |
