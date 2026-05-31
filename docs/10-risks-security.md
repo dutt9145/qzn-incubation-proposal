@@ -9,7 +9,7 @@ QZN's risks fall into five categories: technical, product, legal/regulatory, ope
 | Risk | Mitigation |
 |---|---|
 | Audit finds material issues | Expected. M1 four-tranche structure is the mitigation. Board declines if findings are unfixable. |
-| Constellation pulse rotation edge case | Bounded by 20–40% vote envelope. Deterministic logic. Test coverage extensive on Token v2 (50/50 procedure tests green); pre-refactor baseline for remaining five contracts pending M2 application. |
+| Constellation pulse rotation edge case | Bounded by 15–30% vote envelope. Deterministic logic. Test coverage extensive on Token v2 (50/50 procedure tests green); pre-refactor baseline for remaining five contracts pending M2 application. |
 | Game result manipulation | Server-side validation, signed results, replay protection, tournament review, N-of-M operator attestation requirement. |
 | Oracle integration failure or compromise | QZN integrates with Qubic Oracle Machines (validated through Computor consensus). Compromise of Qubic oracles would affect the entire Qubic ecosystem, not QZN specifically. Application-level fallback paths defined for tournament continuation if oracle unavailability is detected. |
 
@@ -51,7 +51,7 @@ If the Board has a different preferred auditor or wants QZN to solicit competing
 | QZN token misconstrued as investment | Three-layer separation (below); utility documentation; marketing language standard |
 | SC-share records misconstrued as company shares | Clear terminology throughout; tokenomics fully published |
 | Founder personal holdings create conflict | Personal portfolio funds only; multi-sig prevents self-dealing; no MNPI trading commitment (full policy below) |
-| Regulatory action on tokens with economic mechanics | Three-layer separation; counsel review (David Hoppe for securities, Aaron Hall for LLC); ongoing engagement |
+| Regulatory action on tokens with economic mechanics | Three-layer separation; counsel review (David Hoppe for securities, Aaron Hall for LLC); engagement being scoped |
 | Jurisdictional differences in token treatment | Counsel review of geographic distribution; potential geoblocking infrastructure post-launch if required |
 
 ### The three-layer structure
@@ -60,7 +60,7 @@ If the Board has a different preferred auditor or wants QZN to solicit competing
 |---|---|---|
 | **Qubzylthar Nexus LLC** | Wyoming LLC. Owns qzn.app, frontend, backend, off-chain revenue, IP. | Not the token. Not the protocol. |
 | **QZN utility token** | 250M fixed supply, Qubic-native. Gameplay, tournaments, publishing, settlement. | Not LLC equity. Not a security claim. No dividends. No claim on off-chain revenue. |
-| **SC-share records** | Qubic-native primitive. Programmed dividends from accumulator flushes (55% dividends stream). | Not LLC shares. Not QZN tokens. Not off-chain revenue claims. |
+| **SC-share records** | Qubic-native primitive. Programmed dividends from accumulator flushes (30% dividends stream). | Not LLC shares. Not QZN tokens. Not off-chain revenue claims. |
 
 **The three layers do not commingle.** Funds flowing in one layer do not flow to another except through the documented routing mechanisms specified in the smart contract code.
 
@@ -85,7 +85,7 @@ The Discord marketing bot, all user-facing documentation, AMAs, and founder comm
 
 ### What SC-share records do / do not provide
 
-**Provides:** programmed dividend stream from accumulator flushes (the 55% dividends stream off-pulse), distributed via `distributeDividends`.
+**Provides:** programmed dividend stream from accumulator flushes (the 30% dividends stream off-pulse), distributed via `distributeDividends`.
 
 **Does NOT provide:** LLC ownership, IP ownership, treasury claims, off-chain revenue claims, guaranteed dividend amounts, guaranteed liquidity, guaranteed resale value, LLC voting rights. Dividends may be zero in any epoch where match settlement activity is insufficient.
 
